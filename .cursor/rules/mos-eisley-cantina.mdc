@@ -1,0 +1,151 @@
+---
+description: Rules for the Mos Eisley Cantina Tailwind exercise. Follow the exercise brief exactly and keep the implementation simple, semantic, accessible, and limited to index.html.
+globs: "index.html"
+alwaysApply: false
+---
+
+# Mos Eisley Cantina — Tailwind exercise rules
+
+## Scope
+- Work only in `index.html`.
+- Do not create CSS, JavaScript, React, components, config files, or build tooling.
+- Use the Tailwind Play CDN already provided in the starter:
+  `<script src="https://cdn.tailwindcss.com"></script>`
+- Use only HTML + Tailwind utility classes.
+
+## General implementation rules
+- Follow the exercise brief exactly.
+- Do not add sections, features, animations, icons, libraries, or functionality that were not requested.
+- Prefer semantic HTML whenever appropriate.
+- Keep the code readable and beginner-friendly.
+- Do not over-engineer.
+- Preserve the existing `<title>`, meta tags, CDN script, and body unless a requested Tailwind class must be added.
+- Put all styling in Tailwind classes directly in the HTML.
+
+## Page background
+The `<body>` must use a dark Tatooine-inspired gradient:
+- `min-h-screen`
+- `text-slate-100`
+- `antialiased`
+- `bg-gradient-to-br`
+- `from-slate-950`
+- `via-violet-950/40`
+- `to-amber-950/30`
+
+## Header
+Create a semantic `<header>` containing:
+- `<nav aria-label="Primary">`
+- Logo/badge + text `Mos Eisley Cantina`
+- Navigation links:
+  - Features
+  - Menu
+  - Live music
+  - Sign in
+- CTA:
+  - `Reserve a booth`
+
+Header requirements:
+- Sticky on scroll using `sticky top-0`
+- Semi-transparent dark background
+- `backdrop-blur`
+- Suitable `z-index`
+- Centered max-width layout
+- Comfortable horizontal and vertical padding
+- Flex layout with good alignment and spacing
+
+## Accessibility
+- Every link and CTA must be keyboard focusable.
+- Every interactive element must have a clearly visible `focus-visible` style.
+- Prefer Tailwind utilities such as:
+  - `focus-visible:outline-none`
+  - `focus-visible:ring-2`
+  - `focus-visible:ring-violet-400`
+  - appropriate ring offset when needed
+- Keep `aria-label="Primary"` on the main navigation.
+- Images must have meaningful `alt` text.
+
+## Hero
+Inside `<main>`, create one hero `<section>`.
+
+The hero section must use:
+- `grid`
+- `md:grid-cols-2`
+- `gap-12`
+- `items-center`
+
+It must stack into one column on small screens and become two columns from the `md` breakpoint.
+
+### Left column
+Include:
+1. Pill badge:
+   `Open every night, 3 ABY`
+
+2. One `<h1>`:
+   `Find your watering hole on Tatooine`
+
+3. Apply a violet-to-amber gradient only to the word `Tatooine` using:
+   - `bg-gradient-to-r`
+   - violet start color
+   - amber end color
+   - `bg-clip-text`
+   - `text-transparent`
+
+4. Add a short atmospheric paragraph related to the cantina.
+
+5. Add two CTAs:
+   - Primary violet CTA
+   - Secondary outline CTA
+
+Use appropriate spacing, readable typography, and responsive sizing.
+
+## Hero image
+Use exactly this image URL:
+
+`https://product-builder-fullstack.s3.eu-west-3.amazonaws.com/M02_Web-Foundation/unsplash-cantina.jpeg`
+
+Place it inside a semantic `<figure>`.
+
+Figure requirements:
+- Rounded corners
+- `overflow-hidden`
+- `ring-1 ring-white/10`
+- Moody/dark presentation
+- Responsive image using `w-full`
+- Suitable object sizing
+- Add a small caption strip with `<figcaption>`
+
+## Visual direction
+Use a dark sci-fi / Tatooine atmosphere:
+- slate/near-black base
+- violet accents
+- amber accents
+- subtle borders
+- no bright white backgrounds
+
+Pixel-perfect reproduction is not required.
+Prioritize:
+1. Correct structure
+2. Correct Tailwind utilities
+3. Responsive layout
+4. Accessibility
+5. Overall violet/amber visual direction
+
+## Responsive behavior
+At approximately 375px wide:
+- Hero must be one column
+- No horizontal scrolling
+- Text must remain readable
+- CTAs may wrap or stack naturally
+- Header must remain usable without introducing a hamburger menu unless absolutely necessary
+
+## Before finishing
+Verify:
+- HTML tags are correctly nested and closed
+- No nested `<a>` elements
+- Tailwind classes are inside `class=""`
+- Header is sticky
+- Hero is responsive
+- `Tatooine` has gradient text
+- Image URL is correct
+- Every link/CTA has a visible keyboard focus state
+- No extra files or technologies were added

@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mos Eisley Cantina</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = { darkMode: "class" };
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-slate-950 text-slate-100 antialiased bg-gradient-to-br from-slate-950 via-violet-950/60 to-slate-950"
+  >
+    <header
+      class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur"
+    >
+      <nav
+        class="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6"
+        aria-label="Primary"
+      >
+        <a
+          href="#"
+          class="flex min-w-0 items-center gap-2 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+        >
+          <span
+            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-violet-600 text-xs font-semibold text-white"
+            >ME</span
+          >
+          <span class="truncate text-sm font-medium sm:text-base"
+            >Mos Eisley Cantina</span
+          >
+        </a>
+        <div class="flex items-center gap-4">
+          <ul
+            class="flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-slate-300"
+          >
+            <li>
+              <a
+                href="#"
+                class="rounded-md hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="rounded-md hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="rounded-md hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+                >Live music</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="rounded-md hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+                >Sign in</a
+              >
+            </li>
+          </ul>
+
+          <a
+            href="#"
+            class="inline-flex items-center rounded-lg bg-violet-600 px-4 py-2 text-sm font-medium text-white hover:bg-violet-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            >Reserve a booth</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="mx-auto grid max-w-4xl items-center gap-12 px-4 py-14 sm:px-6 md:grid-cols-2 md:py-14"
+      >
+        <div class="min-w-0">
+          <p
+            class="inline-flex rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-amber-200"
+          >
+            Open every night, 3 ABY
+          </p>
+
+          <h1
+            class="mt-5 text-3xl font-bold leading-tight tracking-tight sm:text-4xl"
+          >
+            Find your watering hole on
+            <span
+              class="bg-gradient-to-r from-violet-400 to-amber-400 bg-clip-text text-transparent"
+              >Tatooine</span
+            >
+          </h1>
+
+          <p
+            class="mt-5 max-w-xl text-base leading-relaxed text-slate-300 sm:text-lg"
+          >
+            Live music every night, smugglers welcome in the back booths, and
+            droids: please check the house policy at the door.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href="#"
+              class="inline-flex items-center rounded-lg bg-violet-600 px-5 py-3 text-sm font-medium text-white hover:bg-violet-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+              >Reserve a booth</a
+            >
+            <a
+              href="#"
+              class="inline-flex items-center rounded-lg border border-white/20 px-5 py-3 text-sm font-medium text-slate-100 hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+              >See tonight’s set</a
+            >
+          </div>
+          <div class="mt-8 flex gap-10">
+            <div>
+              <p class="text-xs text-slate-400">Booths</p>
+              <p class="font-semibold">48</p>
+            </div>
+
+            <div>
+              <p class="text-xs text-slate-400">Live bands</p>
+              <p class="font-semibold">7 / week</p>
+            </div>
+
+            <div>
+              <p class="text-xs text-slate-400">Open since</p>
+              <p class="font-semibold">5 BBY</p>
+            </div>
+          </div>
+        </div>
+        <figure
+          class="min-w-0 overflow-hidden rounded-2xl ring-1 ring-white/10 md:max-w-sm md:justify-self-end"
+        >
+          <img
+            src="https://product-builder-fullstack.s3.eu-west-3.amazonaws.com/M02_Web-Foundation/unsplash-cantina.jpeg"
+            alt="Dimly lit cantina bar with bottles on the shelves and stools along the counter"
+            class="h-[380px] w-full object-cover md:h-[420px]"
+          />
+          <figcaption
+            class="border-t border-white/10 bg-slate-950/80 px-4 py-2 text-xs text-slate-400"
+          >
+            Inside the cantina, after sundown
+          </figcaption>
+        </figure>
+      </section>
+      <section
+        id="features"
+        aria-labelledby="features-title"
+        class="mx-auto max-w-6xl px-6 py-20"
+      >
+        <header class="mb-8 flex flex-col items-center text-center">
+          <span
+            class="mb-2 text-xs uppercase tracking-widest text-violet-400 font-semibold"
+            >WHAT YOU FIND INSIDE</span
+          >
+          <h2
+            id="features-title"
+            class="text-2xl md:text-3xl font-bold text-slate-100 mb-2"
+          >
+            A booth for every kind of trouble
+          </h2>
+          <p class="text-sm text-slate-400 max-w-md mx-auto">
+            Three things you can count on, any night you walk through the door.
+          </p>
+        </header>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article
+            class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-xl p-5 flex flex-col items-start transition hover:-translate-y-1"
+          >
+            <span
+              class="size-12 rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20 text-violet-400 flex items-center justify-center mb-4"
+            >
+              <svg
+                aria-hidden="true"
+                width="28"
+                height="28"
+                fill="none"
+                viewBox="0 0 28 28"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M7.5 19c0 2.5 2 4.5 4.5 4.5s4.5-2 4.5-4.5V6.5m0 0c0-1.104-.896-2-2-2s-2 .896-2 2v12.5"
+                />
+              </svg>
+            </span>
+            <h3 class="font-semibold text-sm text-slate-100 mb-2 text-start">
+              Live music nightly
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed text-start">
+              Sunset to sunrise.The house band plays loud enough to drown out a
+              bounty hunter. Bring credits for tips
+            </p>
+          </article>
+          <article
+            class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-xl p-5 flex flex-col items-start transition hover:-translate-y-1"
+          >
+            <span
+              class="size-12 rounded-xl bg-amber-500/10 ring-1 ring-amber-400/20 text-amber-400 flex items-center justify-center mb-4"
+            >
+              <svg
+                aria-hidden="true"
+                width="28"
+                height="28"
+                fill="none"
+                viewBox="0 0 28 28"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14 4l8 5v4c0 5-3.5 9.5-8 11-4.5-1.5-8-6-8-11V9l8-5z"
+                />
+                <path
+                  stroke="currentColor"
+                  stroke-width="2"
+                  d="M10 14.5l2 2 4-4"
+                />
+              </svg>
+            </span>
+            <h3 class="font-semibold text-sm text-slate-100 mb-2 text-start">
+              Smugglers welcome
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed text-start">
+              No questions asked. Back-corner booths, dim lightining, blast
+              resistant alcoves. No records kept.
+            </p>
+          </article>
+          <article
+            class="bg-white/[0.03] border border-white/10 backdrop-blur rounded-xl p-5 flex flex-col items-start transition hover:-translate-y-1"
+          >
+            <span
+              class="size-12 rounded-xl bg-fuchsia-500/10 ring-1 ring-fuchsia-400/20 text-fuchsia-400 flex items-center justify-center mb-4"
+            >
+              <svg
+                aria-hidden="true"
+                width="28"
+                height="28"
+                fill="none"
+                viewBox="0 0 28 28"
+              >
+                <rect
+                  x="6"
+                  y="10"
+                  width="16"
+                  height="10"
+                  rx="3"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <rect
+                  x="12"
+                  y="5"
+                  width="4"
+                  height="5"
+                  rx="2"
+                  stroke="currentColor"
+                  stroke-width="2"
+                />
+                <circle cx="10" cy="21" r="1" fill="currentColor" />
+                <circle cx="18" cy="21" r="1" fill="currentColor" />
+              </svg>
+            </span>
+            <h3 class="font-semibold text-sm text-slate-100 mb-2 text-center">
+              Droids: see house policy
+            </h3>
+            <p class="text-sm text-slate-400 leading-relaxed text-center">
+              Limits on the floor. Power-down recommended for protocol units.
+              Astromechs welcome with their owners.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        id="pricing"
+        aria-labelledby="pricing-title"
+        class="mx-auto max-w-6xl px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-6"
+      >
+        <header class="mb-4 text-center md:col-span-3">
+          <p
+            class="mb-2 text-xs font-semibold uppercase tracking-widest text-violet-400"
+          >
+            BOOTH TIERS
+          </p>
+          <h2
+            id="pricing-title"
+            class="mb-2 text-2xl font-bold text-slate-100 md:text-3xl"
+          >
+            Pick your seat in the galaxy
+          </h2>
+          <p class="text-sm text-slate-400">
+            Walk in for free. Pay credits for priority, music nights, or a
+            private table.
+          </p>
+        </header>
+
+        <article
+          class="flex min-w-0 flex-col rounded-xl border border-white/10 bg-white/[0.03] p-6 text-left"
+        >
+          <h3 class="text-lg font-semibold">Outer Rim</h3>
+          <p class="mt-1 text-sm text-slate-400">Walk-in only</p>
+          <p class="mt-5 text-4xl font-bold">
+            0 <span class="text-sm font-normal text-slate-400">credits</span>
+          </p>
+          <ul class="mb-6 mt-5 space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2">
+              <span aria-hidden="true" class="text-violet-400">✓</span> Bar
+              stool seating
+            </li>
+            <li class="flex gap-2">
+              <span aria-hidden="true" class="text-violet-400">✓</span> House
+              blue milk on tap
+            </li>
+            <li class="flex gap-2">
+              <span aria-hidden="true" class="text-violet-400">✓</span> Standard
+              house policy
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="mt-auto block rounded-lg border border-white/10 bg-white/5 px-4 py-2.5 text-center text-sm font-semibold hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            >Walk in</a
+          >
+        </article>
+
+        <article
+          class="relative flex min-w-0 flex-col rounded-xl border border-white/10 bg-white/[0.03] p-6 text-left ring-2 ring-violet-500 shadow-[0_0_24px_rgba(139,92,246,0.12)]"
+        >
+          <span
+            class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-violet-600 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-white"
+            >RECOMMENDED</span
+          >
+          <h3 class="text-lg font-semibold">Mid Rim</h3>
+          <p class="mt-1 text-sm text-slate-400">Priority reservation</p>
+          <p class="mt-5 text-4xl font-bold">
+            25 <span class="text-sm font-normal text-slate-400">credits</span>
+          </p>
+          <ul class="mb-6 mt-5 space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2">
+              <span aria-hidden="true" class="text-violet-400">✓</span> Reserved
+              booth, any night
+            </li>
+            <li class="flex gap-2">
+              <span aria-hidden="true" class="text-amber-400">✓</span> Live
+              music nights included
+            </li>
+            <li class="flex gap-2">
+              <span aria-hidden="true" class="text-violet-400">✓</span>
+              Smuggler-friendly back row
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="mt-auto block rounded-lg border border-transparent bg-violet-600 px-4 py-2.5 text-center text-sm font-semibold text-white hover:bg-violet-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            >Book Mid Rim</a
+          >
+        </article>
+
+        <article
+          class="flex min-w-0 flex-col rounded-xl border border-white/10 bg-white/[0.03] p-6 text-left"
+        >
+          <h3 class="text-lg font-semibold">Core Worlds</h3>
+          <p class="mt-1 text-sm text-slate-400">Private table</p>
+          <p class="mt-5 text-4xl font-bold">
+            120 <span class="text-sm font-normal text-slate-400">credits</span>
+          </p>
+          <ul class="mb-6 mt-5 space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2">
+              <span aria-hidden="true" class="text-amber-400">✓</span> Private
+              VIP table
+            </li>
+            <li class="flex gap-2">
+              <span aria-hidden="true" class="text-amber-400">✓</span>
+              Jedi-grade service
+            </li>
+            <li class="flex gap-2">
+              <span aria-hidden="true" class="text-amber-400">✓</span> Bodyguard
+              droid on call
+            </li>
+          </ul>
+          <a
+            href="#"
+            class="mt-auto block rounded-lg border border-amber-400/20 bg-amber-400/5 px-4 py-2.5 text-center text-sm font-semibold text-amber-200 hover:bg-amber-400/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            >Book Core Worlds</a
+          >
+        </article>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-slate-950/70">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-8 md:flex-row md:items-center md:justify-between"
+      >
+        <p class="flex items-center gap-3 text-sm font-medium">
+          <span
+            class="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-gradient-to-br from-violet-500 to-amber-400 text-xs font-semibold text-slate-950"
+            >ME</span
+          >
+          <span>
+            Mos Eisley Cantina
+            <span class="mt-1 block text-xs font-normal text-slate-400"
+              >© 3 ABY Mos Eisley Cantina. All credits accepted.</span
+            >
+          </span>
+        </p>
+        <nav
+          aria-label="Footer"
+          class="flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400"
+        >
+          <a
+            href="#"
+            class="rounded hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            >Privacy</a
+          >
+          <a
+            href="#"
+            class="rounded hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            >Terms</a
+          >
+          <a
+            href="#"
+            class="rounded hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+            >Contact</a
+          >
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
+
+ 
