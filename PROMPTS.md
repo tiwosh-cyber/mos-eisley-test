@@ -272,4 +272,22 @@ Avant de terminer, vérifie :
 
 # AI Prompts
 
-- Commit 1: Update this Mos Eisley Cantina page using HTML and Tailwind utilities only. Add scroll-smooth to the <html> element, make the navigation sticky at the top of the viewport using sticky, top-0 and z-50, make sure the Menu navigation link points to #menu and the Live Music navigation link points to #live-music, and add the corresponding id attributes if missing. Do not add JavaScript, script tags, event listeners, frameworks, or unrelated changes.
+- Commit 1: Update this Mos Eisley Cantina page using HTML and Tailwind utilities only. Add scroll-smooth to the <html> element, make the navigation sticky at the top of the viewport using sticky, top-0 and z-50, make sure the Menu navigation link points to #menu and the Live Music navigation link points to #live-music, and add the corresponding id attributes if missing. Do not add JavaScript, script tags, event listeners, frameworks, or unrelated changes. 
+
+**Traduction française :**
+
+Mets à jour cette page Mos Eisley Cantina en utilisant uniquement HTML et les classes utilitaires Tailwind.
+
+Pour cette première modification :
+- Ajoute `scroll-smooth` à l’élément `<html>`.
+- Rends la navigation fixe en haut de la page pendant le défilement avec `sticky`, `top-0` et `z-50`.
+- Vérifie que le lien Menu pointe vers `#menu`.
+- Vérifie que le lien Live Music pointe vers `#live-music`.
+- Ajoute les attributs `id` correspondants aux bonnes sections s’ils sont absents.
+
+N’ajoute pas de JavaScript, de balise `<script>`, d’event listeners, de framework ou de modifications sans rapport avec la demande.
+
+Conserve autant que possible le design et le contenu existants.
+
+- Commit 2: Manual edit — no AI prompt used. Added `shadow-md` to the sticky navigation.
+  - Traduction : Modification manuelle — aucun prompt IA utilisé. Ajout de `shadow-md` à la navigation sticky.
