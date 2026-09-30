@@ -268,3 +268,8 @@ Avant de terminer, vérifie :
 
 -J'ai aligner les icones et le texte a gauche (item-start dans head et <<<<<<h3>>>>>>)
 - J'ai du reecrire le texte en dessous des titre (simplifié par ia)
+
+
+# AI Prompts
+
+- Commit 1: Update this Mos Eisley Cantina page using HTML and Tailwind utilities only. Add scroll-smooth to the <html> element, make the navigation sticky at the top of the viewport using sticky, top-0 and z-50, make sure the Menu navigation link points to #menu and the Live Music navigation link points to #live-music, and add the corresponding id attributes if missing. Do not add JavaScript, script tags, event listeners, frameworks, or unrelated changes.
